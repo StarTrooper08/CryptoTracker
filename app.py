@@ -19,3 +19,7 @@ st.title("Crypto Tracker")
 crypto_option = st.sidebar.selectbox(
     "Which Crypto currency do you want to visualize?",("Bitcoin","Ethereum")
 )
+
+#start and end date for tracking value
+start_date = st.sidebar.date_input("Start Date", date.today() - relativedelta(month=1))
+end_date = st.sidebar.date_input("End Date", date.today())
