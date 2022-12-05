@@ -14,6 +14,7 @@ crypto_mapping = {"Bitcoin":"BTC-USD","Ethereum":"ETH-USD"}
 #streamlit app title
 
 st.title("Crypto Tracker")
+st.image("header.png", width=900)
 
 #sidebar
 crypto_option = st.sidebar.selectbox(
