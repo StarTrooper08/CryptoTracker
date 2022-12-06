@@ -99,6 +99,7 @@ ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.addres
 12. Tested Docker Image locally whether its running properly or not.
 ![part3](https://user-images.githubusercontent.com/72031540/205784715-26062af4-c8b5-4661-8bb7-ff9a76f0a1de.png)
 13. Used dockerslim to minimize docker size and find Vulnerabilities
+![Screenshot from 2022-12-06 08-11-33](https://user-images.githubusercontent.com/72031540/205796277-c48b43d1-5893-4a58-b3a6-3a814dd9bc39.png)
 14. Tested slimmed image created using dockerslim running properly locally or not.
 15. Created Repository on Dockerhub so that we can push our image to it.
 16. Created Github actions CI/CD which will build and push docker image to our dockerhub registry automatically after every git commit on our main branch.
@@ -167,3 +168,10 @@ You can also pull image directly using docker or slimai
 ```cmd
 docker pull atharvas08/cryptotracker
 ```
+
+
+Output:
+![Screenshot from 2022-12-06 08-16-29](https://user-images.githubusercontent.com/72031540/205796673-9ee941c1-177e-4222-a4ae-f99e5ff2dd44.png)
+![Screenshot from 2022-12-06 08-17-29](https://user-images.githubusercontent.com/72031540/205796805-5d356eba-d565-4f74-931b-a11039241c55.png)
+
+
