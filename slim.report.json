@@ -1,0 +1,379 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.39.0|f502574b8d8818e86e90d902708d0e32d1acf8f7|2022-10-25_05:05:23AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "22.04",
+    "display_name": "Ubuntu 22.04.1 LTS"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "atharvas08/cryptotracker",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:7749e979828a2b13b42e366017b41f19712828bf71d0fcfc7ad2c03bf6c927a2",
+      "tags": [
+        "latest"
+      ],
+      "names": [
+        "atharvas08/cryptotracker:latest"
+      ]
+    },
+    "size": 1153381384,
+    "size_human": "1.2 GB",
+    "create_time": "2022-12-06T01:08:09Z",
+    "docker_version": "20.10.21",
+    "architecture": "amd64",
+    "exposed_ports": [
+      "8501/tcp"
+    ],
+    "os": "linux",
+    "env_vars": [
+      "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LANG=C.UTF-8",
+      "GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+      "PYTHON_VERSION=3.9.15",
+      "PYTHON_PIP_VERSION=22.0.4",
+      "PYTHON_SETUPTOOLS_VERSION=58.1.0",
+      "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py",
+      "PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 226580185,
+  "minified_image_size_human": "227 MB",
+  "minified_image": "atharvas08/cryptotracker.slim",
+  "minified_image_has_data": true,
+  "minified_by": 5.090389453075961,
+  "artifact_location": "/tmp/docker-slim-state/.docker-slim-state/images/7749e979828a2b13b42e366017b41f19712828bf71d0fcfc7ad2c03bf6c927a2/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "atharvas08-cryptotracker-seccomp.json",
+  "apparmor_profile_name": "atharvas08-cryptotracker-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": false,
+      "id": "sha256:a612918ff2a396c7dab5149a6d861e3863b7baa522ce9e4d3a20fd398c4f4469",
+      "full_name": "python:3.9-slim",
+      "repo_name": "python",
+      "version_tag": "3.9-slim",
+      "raw_tags": [
+        "python:3.9-slim"
+      ],
+      "create_time": "2022-11-16T06:57:52Z",
+      "new_size": 124835620,
+      "new_size_human": "125 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2022-11-15T04:04:54Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 80514864,
+          "size_human": "80 MB",
+          "params": "file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa in /",
+          "command_snippet": "ADD file:d08e242792caa7f842fcf39a09ad59c97a8...",
+          "command_all": "ADD file:d08e242792caa7f842fcf39a09ad59c97a856660e2013d5aed3e4a29197e9aaa /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-11-15T04:04:54Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"bash\"]\n",
+          "command_snippet": "CMD [\"bash\"]\n",
+          "command_all": "CMD [\"bash\"]\n"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-15T18:54:42Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "command_snippet": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr...",
+          "command_all": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-15T18:54:42Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "LANG=C.UTF-8",
+          "command_snippet": "ENV LANG=C.UTF-8",
+          "command_all": "ENV LANG=C.UTF-8"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-11-15T18:54:48Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 3117413,
+          "size_human": "3.1 MB",
+          "command_snippet": "RUN set -eux; \tapt-get update; \tapt-get inst...",
+          "command_all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tnetbase \t\ttzdata \t; \trm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "set -eux",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates netbase tzdata",
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-15T21:38:09Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+          "command_snippet": "ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E3...",
+          "command_all": "ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-15T21:38:09Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_VERSION=3.9.15",
+          "command_snippet": "ENV PYTHON_VERSION=3.9.15",
+          "command_all": "ENV PYTHON_VERSION=3.9.15"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-11-15T21:45:19Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 29824869,
+          "size_human": "30 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdpkg-dev \t\tgcc \t\tgnupg dirmngr \t\tlibbluetooth-dev \t\tlibbz2-dev \t\tlibc6-dev \t\tlibexpat1-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tliblzma-dev \t\tlibncursesw5-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tmake \t\ttk-dev \t\tuuid-dev \t\twget \t\txz-utils \t\tzlib1g-dev \t; \t\twget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; \twget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; \tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; \tgpg --batch --verify python.tar.xz.asc python.tar.xz; \tcommand -v gpgconf > /dev/null && \\\n\tgpgconf --kill all || :; \trm -rf \"$GNUPGHOME\" python.tar.xz.asc; \tmkdir -p /usr/src/python; \ttar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; \trm python.tar.xz; \t\tcd /usr/src/python; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t--enable-optimizations \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t--with-system-expat \t\t--without-ensurepip \t; \tnproc=\"$(nproc)\"; \tmake -j \"$nproc\" \t\tLDFLAGS=\"-Wl,--strip-all\" \t; \tmake install; \t\tcd /; \trm -rf /usr/src/python; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \\) \\) \t\t\\) -exec rm -rf '{}' + \t; \t\tldconfig; \t\tapt-mark auto '.*' > /dev/null; \tapt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -not \\( -name '*tkinter*' \\) -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\tpython3 --version",
+          "system_commands": [
+            "set -eux; savedAptMark=\"$(apt-mark showmanual)\"; apt-get update; apt-get install -y --no-install-recommends dpkg-dev gcc gnupg dirmngr libbluetooth-dev libbz2-dev libc6-dev libexpat1-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev make tk-dev uuid-dev wget xz-utils zlib1g-dev ; wget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; wget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; GNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; gpg --batch --verify python.tar.xz.asc python.tar.xz; command -v gpgconf > /dev/null",
+            "gpgconf --kill all || :; rm -rf \"$GNUPGHOME\" python.tar.xz.asc; mkdir -p /usr/src/python; tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; rm python.tar.xz; cd /usr/src/python; gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; ./configure --build=\"$gnuArch\" --enable-loadable-sqlite-extensions --enable-optimizations --enable-option-checking=fatal --enable-shared --with-system-expat --without-ensurepip ; nproc=\"$(nproc)\"; make -j \"$nproc\" LDFLAGS=\"-Wl,--strip-all\" ; make install; cd /; rm -rf /usr/src/python; find /usr/local -depth ( ( -type d -a ( -name test -o -name tests -o -name idle_test ) ) -o ( -type f -a ( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' ) ) ) -exec rm -rf '{}' + ; ldconfig; apt-mark auto '.*' > /dev/null; apt-mark manual $savedAptMark; find /usr/local -type f -executable -not ( -name '*tkinter*' ) -exec ldd '{}' ';' | awk '/=>/ { print $(NF-1) }' | sort -u | xargs -r dpkg-query --search | cut -d: -f1 | sort -u | xargs -r apt-mark manual ; apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; rm -rf /var/lib/apt/lists/*; python3 --version"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-11-15T21:45:20Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 32,
+          "size_human": "32 B",
+          "command_snippet": "RUN set -eux; \tfor src in idle3 pydoc3 pytho...",
+          "command_all": "RUN set -eux; \tfor src in idle3 pydoc3 python3 python3-config; do \t\tdst=\"$(echo \"$src\" | tr -d 3)\"; \t\t[ -s \"/usr/local/bin/$src\" ]; \t\t[ ! -e \"/usr/local/bin/$dst\" ]; \t\tln -svT \"$src\" \"/usr/local/bin/$dst\"; \tdone",
+          "system_commands": [
+            "set -eux",
+            "for src in idle3 pydoc3 python3 python3-config",
+            "do dst=\"$(echo \"$src\" | tr -d 3)\"",
+            "[ -s \"/usr/local/bin/$src\" ]",
+            "[ ! -e \"/usr/local/bin/$dst\" ]",
+            "ln -svT \"$src\" \"/usr/local/bin/$dst\"",
+            "done"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-15T21:45:20Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_PIP_VERSION=22.0.4",
+          "command_snippet": "ENV PYTHON_PIP_VERSION=22.0.4",
+          "command_all": "ENV PYTHON_PIP_VERSION=22.0.4"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-15T21:45:20Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_SETUPTOOLS_VERSION=58.1.0",
+          "command_snippet": "ENV PYTHON_SETUPTOOLS_VERSION=58.1.0",
+          "command_all": "ENV PYTHON_SETUPTOOLS_VERSION=58.1.0"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-16T06:57:41Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py",
+          "command_snippet": "ENV PYTHON_GET_PIP_URL=https://github.com/py...",
+          "command_all": "ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-16T06:57:41Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6",
+          "command_snippet": "ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb...",
+          "command_all": "ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-11-16T06:57:52Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 11378442,
+          "size_human": "11 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends wget; \t\twget -O get-pip.py \"$PYTHON_GET_PIP_URL\"; \techo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\texport PYTHONDONTWRITEBYTECODE=1; \t\tpython get-pip.py \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t--no-compile \t\t\"pip==$PYTHON_PIP_VERSION\" \t\t\"setuptools==$PYTHON_SETUPTOOLS_VERSION\" \t; \trm -f get-pip.py; \t\tpip --version",
+          "system_commands": [
+            "set -eux",
+            "savedAptMark=\"$(apt-mark showmanual)\"",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends wget",
+            "wget -O get-pip.py \"$PYTHON_GET_PIP_URL\"",
+            "echo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -",
+            "apt-mark auto '.*' > /dev/null",
+            "[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null",
+            "apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
+            "rm -rf /var/lib/apt/lists/*",
+            "export PYTHONDONTWRITEBYTECODE=1",
+            "python get-pip.py --disable-pip-version-check --no-cache-dir --no-compile \"pip==$PYTHON_PIP_VERSION\" \"setuptools==$PYTHON_SETUPTOOLS_VERSION\"",
+            "rm -f get-pip.py",
+            "pip --version"
+          ]
+        },
+        {
+          "type": "CMD",
+          "time": "2022-11-16T06:57:52Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"python3\"]\n",
+          "command_snippet": "CMD [\"python3\"]\n",
+          "command_all": "CMD [\"python3\"]\n",
+          "raw_tags": [
+            "python:3.9-slim"
+          ]
+        }
+      ]
+    },
+    {
+      "is_top_image": true,
+      "id": "sha256:7749e979828a2b13b42e366017b41f19712828bf71d0fcfc7ad2c03bf6c927a2",
+      "full_name": "atharvas08/cryptotracker:latest",
+      "repo_name": "atharvas08/cryptotracker",
+      "version_tag": "latest",
+      "raw_tags": [
+        "atharvas08/cryptotracker:latest"
+      ],
+      "create_time": "2022-12-06T01:08:09Z",
+      "new_size": 1028545764,
+      "new_size_human": "1.0 GB",
+      "base_image_id": "sha256:a612918ff2a396c7dab5149a6d861e3863b7baa522ce9e4d3a20fd398c4f4469",
+      "instructions": [
+        {
+          "type": "COPY",
+          "time": "2022-12-06T01:05:50Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:21a4d319efdbb5297d55d10791064a3c7ac27b76603b12b827d322b6798e7652",
+          "layer_index": 0,
+          "size": 462411597,
+          "size_human": "462 MB",
+          "params": "dir:88f2e0306ea5d84fcf5125b7ef57b2d337b26f832760053531019b6ef65f9b61 in /app",
+          "command_snippet": "COPY dir:88f2e0306ea5d84fcf5125b7ef57b2d337b...",
+          "command_all": "COPY dir:88f2e0306ea5d84fcf5125b7ef57b2d337b26f832760053531019b6ef65f9b61 /app",
+          "target": "/app",
+          "source_type": "dir"
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2022-12-06T01:06:05Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:5ab05ffd830ee173e2df525aa5189db791ac4de277f0fc0065ba6be2be67c791",
+          "layer_index": 0,
+          "size": 0,
+          "params": "/app",
+          "command_snippet": "WORKDIR /app",
+          "command_all": "WORKDIR /app",
+          "system_commands": [
+            "mkdir -p /app"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-12-06T01:08:01Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:51e5bf3e34fe8ad877df6b3c18007785e7a21654549427fb34c93aa2e4ca413d",
+          "layer_index": 0,
+          "size": 566134167,
+          "size_human": "566 MB",
+          "command_snippet": "RUN pip3 install -r requirements.txt",
+          "command_all": "RUN pip3 install -r requirements.txt",
+          "system_commands": [
+            "pip3 install -r requirements.txt"
+          ]
+        },
+        {
+          "type": "EXPOSE",
+          "time": "2022-12-06T01:08:09Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:a49611ad01b1a5946a327e0a193f78d815b79a4da02a8f1b6080541e2f2d5264",
+          "layer_index": 0,
+          "size": 0,
+          "params": "8501",
+          "command_snippet": "EXPOSE 8501",
+          "command_all": "EXPOSE 8501"
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2022-12-06T01:08:09Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"streamlit\",\"run\",\"app.py\",\"--server.port=8501\",\"--server.address=0.0.0.0\"]\n",
+          "command_snippet": "ENTRYPOINT [\"streamlit\",\"run\",\"app.py\",\"--se...",
+          "command_all": "ENTRYPOINT [\"streamlit\",\"run\",\"app.py\",\"--server.port=8501\",\"--server.address=0.0.0.0\"]\n",
+          "raw_tags": [
+            "atharvas08/cryptotracker:latest"
+          ]
+        }
+      ]
+    }
+  ]
+}
